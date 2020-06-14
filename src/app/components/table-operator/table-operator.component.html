@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Codigo Operador</th>
+      <th>Placa</th>
+      <th>tid</th>
+      <th>epc</th>
+      <th>Categoria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let operator of operatorsItem">
+      <td>
+        {{ operator.id }}
+      </td>
+      <td>{{ operator.codigoOperador }}</td>
+      <td>{{ operator.placa }}</td>
+      <td>{{ operator.tid }}</td>
+      <td>{{ operator.epc }}</td>
+      <td>{{ operator.categoria }}</td>
+    </tr>
+  </tbody>
+</table>
